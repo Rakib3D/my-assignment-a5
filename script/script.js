@@ -10,11 +10,16 @@ for (const btn of allBtn) {
 
 //seat count update
 
+
+//event.target.setAttribute("disabled",false);
+
+
 const firstSitCount = getConvertedValue("count-seat");
-if (firstSitCount + 1 > 4) {
+if (firstSitCount + 1 > 5) {
     alert ("Limit cross");
     return;
 }
+event.target.style.backgroundColor = "green";
 
 
 const count = getConvertedValue("seat-count");
@@ -58,9 +63,11 @@ function updateGrandTotal(status) {
     }
     else {
         const couponCode = document.getElementById("coupon-code").value;
+        console.log(couponCode);
         if (couponCode == "NEW15") {
+            
             const discounted = totalCost * 0.2;
-            console.log(discounted);
+            document.getElementById("grand-total").innerText = total-cost - discounted;
         }
         else{
             alert ("Please enter a valid coupon code.");
