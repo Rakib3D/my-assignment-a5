@@ -82,7 +82,7 @@
                 </div>
                 <div class="card lg:w-[200px] bg-yellow-500 text-neutral-content mt-5  lg:mt-12 ">
                     <div class="card-body text-black">
-                        <h2 class="card-title text-2xl font-medium">NEW<sub>15</sub></h2>
+                        <h2 id="coupon-code" class="card-title text-2xl font-medium">NEW15</h2>
                         <p>Coupon code</p>
                     </div>
                 </div>
@@ -97,7 +97,7 @@
                 </div>
                 <div class="card lg:w-[200px] bg-pink-400 text-neutral-content mt-5  lg:mt-12 ">
                     <div class="card-body text-black">
-                        <h2 class="card-title text-xl font-medium">Couple<sub>20</sub></h2>
+                        <h2 class="card-title text-xl font-medium">Couple20</h2>
                         <p>Coupon code</p>
                     </div>
                 </div>
@@ -126,7 +126,8 @@
                                 </div>
                                 <div class="ml-14">
                                     <a class="btn text-base font-bold text-green-500 bg-lime-200"><img
-                                            src="images/seat-green-filled.png" alt=""> 40 Seats left</a>
+                                            src="images/seat-green-filled.png" alt=""> <span id="seat-count">28</span> Seats
+                                        left</a>
                                 </div>
                             </div>
                             <div class="bg-slate-200 rounded-md">
@@ -143,8 +144,8 @@
                         </div>
                         <div class="card lg:w-[200px] bg-white-1000 text-neutral-content mt-5  lg:mt-12 ">
                             <div class="card-body text-black">
-                                <h2 class="card-title text-2xl font-medium">NEW<sub>15</sub></h2>
-                                <p>Coupon code</p>
+                                <h2 class="card-title text-2xl font-medium">550Tk</h2>
+                                <p>Per seat</p>
                             </div>
                         </div>
                     </div>
@@ -170,76 +171,126 @@
                         </div>
                     </div>
                     <div class=" ml-[550px] mb-7 mt4">
-                        <button class="btn btn-active btn-ghost ">Driver</button>             
+                        <button class="btn btn-active btn-ghost ">Driver</button>
                     </div>
-                    <div class=" grid grid-cols-4 gap-2">           
-                        <button class="btn btn-active btn-ghost ">A1</button>
-                        <button class="btn btn-active btn-ghost ">A2</button>
-                        <button class="btn btn-active btn-ghost ">A3</button>
-                        <button class="btn btn-active btn-ghost ">A4</button>
-                        <button class="btn btn-active btn-ghost ">B1</button>
-                        <button class="btn btn-active btn-ghost ">B2</button>
-                        <button class="btn btn-active btn-ghost ">B3</button>
-                        <button class="btn btn-active btn-ghost ">B4</button>
+                    <div>
+                        <div class=" grid grid-cols-4 gap-2 mb-2">
+                            <button class="btn btn-active btn-ghost ">A1</button>
+                            <button class="btn btn-active btn-ghost ">A2</button>
+                            <button class="btn btn-active btn-ghost ">A3</button>
+                            <button class="btn btn-active btn-ghost ">A4</button>
+                        </div>
+                        <div class=" grid grid-cols-4 gap-2 mb-2">
+                            <button class="btn btn-active btn-ghost ">B1</button>
+                            <button class="btn btn-active btn-ghost ">B2</button>
+                            <button class="btn btn-active btn-ghost ">B3</button>
+                            <button class="btn btn-active btn-ghost ">B4</button>
+                        </div>
+                        <div class=" grid grid-cols-4 gap-2 mb-2">
+                            <button class="btn btn-active btn-ghost ">C1</button>
+                            <button class="btn btn-active btn-ghost ">C2</button>
+                            <button class="btn btn-active btn-ghost ">C3</button>
+                            <button class="btn btn-active btn-ghost ">C4</button>
+                        </div>
+                        <div class=" grid grid-cols-4 gap-2 mb-2">
+                            <button class="btn btn-active btn-ghost ">D1</button>
+                            <button class="btn btn-active btn-ghost ">D2</button>
+                            <button class="btn btn-active btn-ghost ">D3</button>
+                            <button class="btn btn-active btn-ghost ">D4</button>
+                        </div>
+                        <div class=" grid grid-cols-4 gap-2 mb-2">
+                            <button class="btn btn-active btn-ghost ">E1</button>
+                            <button class="btn btn-active btn-ghost ">E2</button>
+                            <button class="btn btn-active btn-ghost ">E3</button>
+                            <button class="btn btn-active btn-ghost ">E4</button>
+                        </div>
+                        <div class=" grid grid-cols-4 gap-2 mb-2">
+                            <button class="btn btn-active btn-ghost ">F1</button>
+                            <button class="btn btn-active btn-ghost ">F2</button>
+                            <button class="btn btn-active btn-ghost ">F3</button>
+                            <button class="btn btn-active btn-ghost ">F4</button>
+                        </div>
+                        <div class=" grid grid-cols-4 gap-2 mb-2">
+                            <button class="btn btn-active btn-ghost ">G1</button>
+                            <button class="btn btn-active btn-ghost ">G2</button>
+                            <button class="btn btn-active btn-ghost ">G3</button>
+                            <button class="btn btn-active btn-ghost ">G4</button>
+                        </div>
+
                     </div>
                 </div>
 
                 <div class="input-field ml-10">
-                    <div class="border-dotted border-b-2"><p>Select Your Seat</p></div>
+                    <div class="border-dotted border-b-2">
+                        <p>Select Your Seat</p>
+                    </div>
                     <div class="flex justify-around mt-10 border-dotted border-b-2">
-                        <div class="font-semibold">Seat<sup>1</sup></div>
+                        <div class="font-semibold">Seat <span id="count-seat">0</span> </div>
                         <div class="font-semibold">Class</div>
                         <div class="font-semibold">Price</div>
                     </div>
-                    <div class="flex justify-around mt-2">
-                        <div>A1</div>
-                        <div>Economy</div>
-                        <div>550</div>
-                    </div>
-                    <div class="flex justify-around mt-2 border-solid border-b-2">
-                        <div>A2</div>
-                        <div>Economy</div>
-                        <div>550</div>
-                    </div>
+
+                    <div id="selected-ticket-container"></div>
+
+
                     <div class="flex justify-around mt-2">
                         <div class="font-semibold">Total Price</div>
-                        <div class="font-semibold">BDT-1100</div>                  
+                        <div class="font-semibold">BDT- <span id="total-cost">00</span> TK</div>
                     </div>
                     <label class="input input-bordered flex items-center gap-2 mt-8">
-                        <input type="text" class="grow" placeholder="Have any cupoun?"/>
-                        <button class="btn btn-active btn-success ">Apply</button>
-                      </label>
-                      <div class="flex justify-around mt-2">
+                        <input id="coupon-code" type="text" class="grow" placeholder="Have any cupoun?" />
+                        <button onclick="updateGrandTotal (`apply-btn`)" id="apply-btn"
+                            class="btn btn-active btn-success">Apply</button>
+                    </label>
+                    <div class="flex justify-around mt-2">
                         <div class="font-semibold">Grand Total</div>
-                        <div class="font-semibold">BDT-1100</div>                  
+                        <div class="font-semibold">BDT- <span id="grand-total">00</span> TK</div>
                     </div>
-                    <div class="font-semibold mb-2"><p>Passenger Name*</p></div>
+                    <div class="font-semibold mb-2">
+                        <p>Passenger Name*</p>
+                    </div>
                     <label class="input input-bordered flex items-center gap-2">
                         <input type="text" class="grow" placeholder="Enter Your Name" />
-                      </label>
-                      <div class="font-semibold mb-2"><p>Phone Number*</p></div>
-                      <input type="phone" placeholder="Enter Your Phone Number" class="input input-bordered w-full max-w-xs" />
-                      <div class="font-semibold mb-2"><p>Email IDd</p></div>
-                      <label class="input input-bordered flex items-center gap-2">
+                    </label>
+                    <div class="font-semibold mb-2">
+                        <p>Phone Number*</p>
+                    </div>
+                    <input type="phone" placeholder="Enter Your Phone Number"
+                        class="input input-bordered w-full max-w-xs" />
+                    <div class="font-semibold mb-2">
+                        <p>Email IDd</p>
+                    </div>
+                    <label class="input input-bordered flex items-center gap-2">
                         <input type="text" class="grow" placeholder="@site.com" />
-                      </label>
-                      <button class="btn btn-success mt-4 w-full">Next</button>
-                      <div class="flex justify-around mt-2">
-
+                    </label>
+                    <button class="btn btn-success mt-4 w-96 ml-24" onclick="my_modal_4.showModal()">Next</button>
+                    <div class="flex justify-around mt-2">
                         <div class="border-solid border-b-2">Terms and condition</div>
-                        <div class="border-solid border-b-2">Cencelation policy</div>  
+                        <div class="border-solid border-b-2">Cencelation policy</div>
+                    </div>
+                </div>
 
-            </div>
-
-
-
-
-        </div>
+                <dialog id="my_modal_4" class="modal">
+                    <div class="modal-box  ">
+                        <img class="ml-48" src="images/success.png" alt="">
+                        <h3 class="font-bold text-3xl ml-44 text-green-500">Success</h3>
+                        <p class="py-4 ml-8">Thank you for Booking Our Bus Seats.
+                            We are working hard to find the best service and deals for you. <br>
+                            Shortly you will find a confirmation in your email.</p>
+                        <div class="modal-action">
+                            <form method="dialog">
+                                <button class="btn btn-success w-96 mr-10">Continue</button>
+                            </form>
+                        </div>
+                    </div>
+                </dialog>
 
 
 
     </section>
     <footer>
+
+       
 
     </footer>
 
