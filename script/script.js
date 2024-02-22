@@ -8,14 +8,9 @@ for (const btn of allBtn) {
         const selectedContainer = document.getElementById("selected-ticket-container");
         const div = document.createElement("div");
 
-//seat count update
-
-
-//event.target.setAttribute("disabled",false);
-
 
 const firstSitCount = getConvertedValue("count-seat");
-if (firstSitCount + 1 > 5) {
+if (firstSitCount + 1 > 7) {
     alert ("Limit cross");
     return;
 }
@@ -27,9 +22,6 @@ document.getElementById("seat-count").innerText = count -1;
 
 const totalSitCount = getConvertedValue("count-seat");
 document.getElementById("count-seat").innerText = totalSitCount +1;
-
-
-
 
 
         div.classList.add("flex");
@@ -54,8 +46,6 @@ document.getElementById("count-seat").innerText = totalSitCount +1;
 }
 
 
-//coupon function//
-
 function updateGrandTotal(status) {
     const totalCost = getConvertedValue("total-cost");
     if (status == undefined) {
@@ -63,9 +53,7 @@ function updateGrandTotal(status) {
     }
     else {
         const couponCode = document.getElementById("coupon-code").value;
-        console.log(couponCode);
-        if (couponCode == "NEW15") {
-            
+        if (couponCode == "NEW15") {       
             const discounted = totalCost * 0.2;
             document.getElementById("grand-total").innerText = total-cost - discounted;
         }
